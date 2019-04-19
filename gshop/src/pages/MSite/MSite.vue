@@ -308,10 +308,23 @@
 
 <script>
 import HeaderTop from "../../components/HeaderTop/HeaderTop.vue";
+import Swiper from "swiper";
+import "swiper/dist/css/swiper.min.css";
 export default {
   components: {
     HeaderTop
-  }
+  },
+   mounted() {
+    // 创建一个Swiper实例，来实现轮播
+    new Swiper(".swiper-container", {
+      loop: true, // 可以循环轮播
+      // 如果需要分页器
+      pagination: {
+        el: ".swiper-pagination"
+      }
+    });
+  },
+  
 };
 </script>
 
