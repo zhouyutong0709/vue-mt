@@ -8,7 +8,7 @@
 
     <HeaderTop title="我的"></HeaderTop>
     <section class="profile-number">
-      <a href="javascript:" class="profile-link">
+      <router-link to="/login" class="profile-link">
         <div class="profile_image">
           <i class="iconfont icon-person"></i>
         </div>
@@ -24,7 +24,25 @@
         <span class="arrow">
           <i class="iconfont icon-jiantou1"></i>
         </span>
-      </a>
+      </router-link>
+
+      <!-- <a href="javascript:" class="profile-link">
+        <div class="profile_image">
+          <i class="iconfont icon-person"></i>
+        </div>
+        <div class="user-info">
+          <p class="user-info-top">登录/注册</p>
+          <p>
+            <span class="user-icon">
+              <i class="iconfont icon-shouji icon-mobile"></i>
+            </span>
+            <span class="icon-mobile-number">暂无绑定手机号</span>
+          </p>
+        </div>
+        <span class="arrow">
+          <i class="iconfont icon-jiantou1"></i>
+        </span>
+      </a>-->
     </section>
     <section class="profile_info_data border-1px">
       <ul class="info_data_list">
@@ -117,6 +135,7 @@ export default {
 
 .profile { // 我的
   width: 100%;
+  overflow: hidden;
 
   .profile-number {
     margin-top: 45.5px;
